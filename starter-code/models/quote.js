@@ -1,8 +1,8 @@
 var mongoose = require('mongoose');
 
 var QuoteSchema = mongoose.Schema({
-  text: String,
-  author: String
+  author: String,
+  text: String
 });
 
 var Quote = mongoose.model('Quote', QuoteSchema);

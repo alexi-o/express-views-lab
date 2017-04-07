@@ -9,6 +9,7 @@ var quotesController = require('../controllers/quotesController');
 router.route('/quotes')
   .get(quotesController.getAll)
   .post(quotesController.createQuote);
+  
 router.route('/quotes/:id')
   .get(quotesController.getQuote)
   .put(quotesController.updateQuote)

@@ -5,8 +5,8 @@ var Quote = require('../models/Quote');
 function getAll(request, response) {
   Quote.find(function(error, quotes) {
     if(error) response.json({message: 'Could not find any quote'});
-
-    response.json({quotes: quotes});
+    console.log("Rendering quotes");
+    response.render({quotes: quotes});
   });
 }
 
